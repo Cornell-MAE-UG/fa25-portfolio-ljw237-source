@@ -6,7 +6,7 @@ image: /assets/images/IMG_2796.jpg
 ---
 
 <iframe
-  src="{{ '/assets/Device_ Heat Exchanger (1).pdf'}}"
+  src="{{ '/assets/Device_ Heat Exchanger (1).pdf' | relative_url }}"
   width="100%"
   height="600px">
 </iframe>
