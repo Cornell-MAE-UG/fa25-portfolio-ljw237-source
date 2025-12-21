@@ -6,7 +6,7 @@ title: Luca Welle
 ## About Me
 
 
-![Profile Picture]({{ "assets/images/profile-pic.jpg" | relative_url }}){: class="profile-image"}
+![Profile Picture]({{ "assets/images/IMG_2594.jpg" | relative_url }}){: class="profile-image"}
 
  
 My name is Luca Welle, and I am a sophomore studying mechanical engineering at Cornell University. 
