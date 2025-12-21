@@ -8,7 +8,7 @@ permalink: /cv/
 [Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [ljw237@cornell.edu](mailto:ljw237@cornell.edu) | | | **Phone:** +123 456 7890
 
 ---
 
@@ -19,12 +19,13 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 
 #### Education
 - **Cornell University**  
-  *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: Month, Year
+  *Bachelor of Science in Mechanical and Aerospace Engineering*
+  *Business Minor for Engineers*  
+  Graduation: May, 2028
 
-- **[High School Name]**  
+- **Rumson Fair Haven Regional High School**  
   *High School Diploma*  
-  Graduation: [Month, Year]
+  Graduation: [June, 2024]
 
 ---
 
