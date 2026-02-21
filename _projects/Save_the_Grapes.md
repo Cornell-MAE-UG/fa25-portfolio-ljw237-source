@@ -2,7 +2,12 @@
 Compile to PDF (example):
   pandoc O3_ClientOutline_example_submission.md -o O3_ClientOutline.pdf
 -->
-
+---
+layout: project
+title: Save the Grapes
+description: In class lab involving a heat exchanger
+image: /assets/images/IMG_2796.jpg
+---
 ---
 fontsize: 11pt
 geometry: margin=1in
