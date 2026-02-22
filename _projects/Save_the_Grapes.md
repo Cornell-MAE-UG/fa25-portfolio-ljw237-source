@@ -1,21 +1,12 @@
-<!--
-Compile to PDF (example):
-  pandoc O3_ClientOutline_example_submission.md -o O3_ClientOutline.pdf
--->
+
 ---
 layout: project
 title: Save the Grapes
 description: In class lab involving a heat exchanger
+technologies: [Written Report]
 image: /assets/images/IMG_2796.jpg
-fontsize: 11pt
-geometry: margin=1in
-papersize: letter
-pagestyle: empty
-header-includes:
-  - \pagenumbering{gobble}
----
 
-# Grapevine Redirection and Attraction for Pest Elimination
+---
 
 **Team:** Save the Grapes
 **Client(s):** Cornell CALS Extension / E\&J Gallo Winery / National Grape  
