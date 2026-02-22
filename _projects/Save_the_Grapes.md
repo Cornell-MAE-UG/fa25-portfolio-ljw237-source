@@ -5,7 +5,6 @@ title: Save the Grapes
 description: In class lab involving a heat exchanger
 technologies: [Written Report]
 image: /assets/images/IMG_2796.jpg
-
 ---
 
 **Team:** Save the Grapes
