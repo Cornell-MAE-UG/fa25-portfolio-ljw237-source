@@ -6,7 +6,7 @@ title: Luca Welle
 <section class="hero">
   <div class="hero-text">
     <p class="eyebrow">Mechanical Engineering · Cornell University</p>
-    <img src="{{ "assets/images/IMG_2594.jpg" | relative_url }}" alt="Luca Welle" class="about-photo" />
+    <h1 class="headline">Engineer,<br><em>designer,</em><br>builder.</h1>
     <p class="bio">I'm Luca Welle, a sophomore at Cornell studying mechanical engineering — interested in thermal systems, product design, and solving real-world problems from the ground up.</p>
     <div class="cta-row">
       <a href="{{ "/projects/" | relative_url }}" class="btn btn-primary">View Projects</a>
@@ -14,7 +14,7 @@ title: Luca Welle
     </div>
   </div>
   <div class="hero-img">
-    <img src="{{ "assets/images/IMG_2796.jpg" | relative_url }}" alt="Engineering workspace" />
+    <img src="{{ "assets/images/IMG_2594.jpg" | relative_url }}" alt="Luca Welle" />
     <span class="hero-label">Cornell · Class of 2027</span>
   </div>
 </section>
