@@ -1,125 +1,144 @@
 // ============================================================
 // Homepage styles — _sass/_home.scss
-// Import this in your main sass file with: @import "home";
+// Full-width dark theme
 // ============================================================
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-// Typography base for homepage
-.headline,
-.stat-num {
-  font-family: 'DM Serif Display', Georgia, serif;
+// Override the site's container and background for homepage only
+body {
+  background: #242422 !important;
 }
 
-body,
-.bio,
-.eyebrow,
-.btn,
-.section-label,
-.skill-tag,
-.contact-link,
-.stat-label {
-  font-family: 'DM Sans', system-ui, sans-serif;
+header {
+  background: #242422 !important;
+  border-bottom: 1px solid #333 !important;
+  padding: 1rem 3rem !important;
+  margin-bottom: 0 !important;
+
+  a {
+    color: #f0ede4 !important;
+    font-family: 'DM Serif Display', Georgia, serif !important;
+    font-size: 18px !important;
+  }
+
+  nav a {
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    color: #666 !important;
+    font-weight: 400 !important;
+
+    &:hover, &.active {
+      color: #f0ede4 !important;
+    }
+  }
 }
 
-// ── Hero ────────────────────────────────────────────────────
+footer {
+  background: #242422 !important;
+  border-top: 1px solid #333 !important;
+  color: #555 !important;
+  font-size: 11px !important;
+  padding: 1rem 3rem !important;
+  margin-top: 0 !important;
+}
+
+// Remove container max-width on homepage
+.container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+// ── Hero ─────────────────────────────────────────────────────
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 480px;
-  border-bottom: 1px solid #e2e2da;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 3fr 2fr;
+  width: 100%;
+  min-height: 500px;
+  border-bottom: 1px solid #333;
 }
 
 .hero-text {
-  padding: 4rem 2.5rem 3rem;
+  padding: 3.5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #faf9f4;
-
-  @media (max-width: 768px) {
-    padding: 2.5rem 1.5rem;
-  }
+  gap: 1.25rem;
+  background: #242422;
 }
 
 .eyebrow {
+  font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #888;
-  margin: 0 0 1rem;
+  color: #666;
+  margin: 0;
 }
 
-.headline {
-  font-size: 52px;
-  line-height: 1.08;
-  color: #1a1a18;
-  margin: 0 0 1.5rem;
-  letter-spacing: -1px;
-
-  em {
-    font-style: italic;
-    color: #888;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 38px;
-  }
+.about-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 10px;
+  display: block;
 }
 
 .bio {
-  font-size: 15px;
-  line-height: 1.75;
-  color: #666;
-  max-width: 380px;
-  margin: 0 0 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #999;
   font-weight: 300;
+  max-width: 480px;
+  margin: 0;
 }
 
-// ── CTA Buttons ─────────────────────────────────────────────
+// ── Buttons ───────────────────────────────────────────────────
 
 .cta-row {
   display: flex;
   gap: 12px;
-  align-items: center;
   flex-wrap: wrap;
 }
 
-.btn {
-  font-size: 13px;
-  font-weight: 500;
-  padding: 10px 22px;
-  border-radius: 999px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.2s ease;
-  line-height: 1;
+// Override existing .btn styles for homepage only
+.cta-row .btn,
+.cta-row .btn-primary,
+.cta-row .btn-ghost {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 11px 24px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+  transition: all 0.2s ease !important;
 }
 
-.btn-primary {
-  background: #1a1a18;
-  color: #faf9f4;
-  border: none;
+.cta-row .btn-primary {
+  background: #f0ede4 !important;
+  color: #242422 !important;
+  border: none !important;
 
   &:hover {
-    background: #333;
+    background: #e0ddd4 !important;
   }
 }
 
-.btn-ghost {
-  background: transparent;
-  color: #1a1a18;
-  border: 1px solid #ccc;
+.cta-row .btn-ghost {
+  background: transparent !important;
+  color: #f0ede4 !important;
+  border: 1px solid #555 !important;
 
   &:hover {
-    border-color: #888;
+    border-color: #888 !important;
   }
 }
 
@@ -128,20 +147,16 @@ body,
 .hero-img {
   position: relative;
   overflow: hidden;
-  min-height: 400px;
-  background: #c9d4cc;
+  background: #2e2e2b;
+  min-height: 500px;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
+    object-position: center;
     display: block;
-    filter: grayscale(10%);
-  }
-
-  @media (max-width: 768px) {
-    min-height: 280px;
+    filter: brightness(0.85);
   }
 }
 
@@ -149,75 +164,66 @@ body,
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
-  font-size: 11px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: white;
-  background: rgba(0, 0, 0, 0.35);
+  color: #f0ede4;
+  background: rgba(0, 0, 0, 0.5);
   padding: 6px 14px;
   border-radius: 999px;
 }
 
-// ── Stats Bar ────────────────────────────────────────────────
+// ── Stats Bar ─────────────────────────────────────────────────
 
 .stats-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-bottom: 1px solid #e2e2da;
-  background: #faf9f4;
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
+  width: 100%;
+  border-bottom: 1px solid #333;
+  background: #2a2a28;
 }
 
 .stat {
-  padding: 1.5rem 2.5rem;
-  border-right: 1px solid #e2e2da;
+  padding: 1.75rem 4rem;
+  border-right: 1px solid #333;
 
   &:last-child {
     border-right: none;
   }
-
-  @media (max-width: 600px) {
-    border-right: none;
-    border-bottom: 1px solid #e2e2da;
-  }
 }
 
 .stat-num {
-  font-size: 32px;
-  color: #1a1a18;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 34px;
+  color: #f0ede4;
   line-height: 1;
-  margin: 0 0 4px;
+  margin: 0 0 5px;
 }
 
 .stat-label {
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  color: #888;
-  font-weight: 400;
-  letter-spacing: 0.3px;
+  color: #666;
   margin: 0;
 }
 
-// ── Info Sections ────────────────────────────────────────────
+// ── Info Sections ─────────────────────────────────────────────
 
 .info-section {
-  padding: 2.5rem 2.5rem;
-  background: #faf9f4;
-  border-bottom: 1px solid #e2e2da;
-
-  @media (max-width: 768px) {
-    padding: 2rem 1.5rem;
-  }
+  padding: 2.5rem 4rem;
+  background: #242422;
+  border-bottom: 1px solid #333;
+  width: 100%;
 }
 
 .section-label {
-  font-size: 11px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #888;
+  color: #666;
   margin: 0 0 1.25rem;
   display: flex;
   align-items: center;
@@ -227,11 +233,11 @@ body,
     content: '';
     flex: 1;
     height: 1px;
-    background: #e2e2da;
+    background: #333;
   }
 }
 
-// ── Skills Tags ──────────────────────────────────────────────
+// ── Skills ────────────────────────────────────────────────────
 
 .skills {
   display: flex;
@@ -240,17 +246,16 @@ body,
 }
 
 .skill-tag {
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  font-weight: 400;
-  padding: 6px 14px;
+  padding: 6px 16px;
   border-radius: 999px;
-  border: 1px solid #ddd;
-  color: #666;
-  background: #f4f3ee;
-  letter-spacing: 0.2px;
+  border: 1px solid #3a3a38;
+  color: #888;
+  background: #2a2a28;
 }
 
-// ── Contact ──────────────────────────────────────────────────
+// ── Contact ───────────────────────────────────────────────────
 
 .contact-row {
   display: flex;
@@ -259,20 +264,18 @@ body,
 }
 
 .contact-link {
+  font-family: 'DM Sans', sans-serif;
   font-size: 13px;
-  color: #666;
+  color: #888;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  border: 1px solid #ddd;
+  padding: 8px 18px;
+  border: 1px solid #3a3a38;
   border-radius: 8px;
-  background: white;
+  background: #2a2a28;
   transition: border-color 0.2s, color 0.2s;
 
   &:hover {
-    border-color: #888;
-    color: #1a1a18;
+    border-color: #666;
+    color: #f0ede4;
   }
 }
