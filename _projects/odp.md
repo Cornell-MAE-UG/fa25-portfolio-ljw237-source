@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 title: Open Design Project
 description: A semester-long engineering design project developing a spotted lanternfly trap for New York vineyards.
 image: /assets/images/SLFonvine.png
@@ -13,3 +13,5 @@ A semester-long design project completed in MAE 2250, partnering with Cornell CA
 
 - [Milestone 1: Client Pitch](/fa25-portfolio-ljw237-source/projects/odp/milestone1/)
 - [Milestone 2: First Prototype](/fa25-portfolio-ljw237-source/projects/odp/milestone2/)
+
+[← Back to Projects](/fa25-portfolio-ljw237-source/projects/)
