@@ -1,25 +1,24 @@
 // ============================================================
 // Homepage styles — _sass/_home.scss
-// Full-width dark theme
 // ============================================================
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-// Override the site's container and background for homepage only
+// Override site background and header for homepage
 body {
-  background: #242422 !important;
+  background: #1a1a18 !important;
 }
 
 header {
-  background: #242422 !important;
-  border-bottom: 1px solid #333 !important;
-  padding: 1rem 3rem !important;
+  background: #1a1a18 !important;
+  border-bottom: 1px solid #2e2e2b !important;
   margin-bottom: 0 !important;
+  padding: 1.1rem 2.5rem !important;
 
   a {
     color: #f0ede4 !important;
     font-family: 'DM Serif Display', Georgia, serif !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
 
   nav a {
@@ -30,22 +29,20 @@ header {
     color: #666 !important;
     font-weight: 400 !important;
 
-    &:hover, &.active {
+    &:hover {
       color: #f0ede4 !important;
     }
   }
 }
 
 footer {
-  background: #242422 !important;
-  border-top: 1px solid #333 !important;
+  background: #1a1a18 !important;
+  border-top: 1px solid #2e2e2b !important;
   color: #555 !important;
   font-size: 11px !important;
-  padding: 1rem 3rem !important;
   margin-top: 0 !important;
 }
 
-// Remove container max-width on homepage
 .container {
   max-width: 100% !important;
   padding: 0 !important;
@@ -55,19 +52,22 @@ footer {
 
 .hero {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  width: 100%;
-  min-height: 500px;
-  border-bottom: 1px solid #333;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+  border-bottom: 1px solid #2e2e2b;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero-text {
-  padding: 3.5rem 4rem;
+  padding: 4rem 2.5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.25rem;
-  background: #242422;
+  background: #1a1a18;
 }
 
 .eyebrow {
@@ -76,7 +76,7 @@ footer {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #666;
+  color: #555;
   margin: 0;
 }
 
@@ -91,11 +91,11 @@ footer {
 
 .bio {
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.75;
   color: #999;
   font-weight: 300;
-  max-width: 480px;
+  max-width: 400px;
   margin: 0;
 }
 
@@ -107,14 +107,11 @@ footer {
   flex-wrap: wrap;
 }
 
-// Override existing .btn styles for homepage only
-.cta-row .btn,
-.cta-row .btn-primary,
-.cta-row .btn-ghost {
+.cta-row .btn {
   font-family: 'DM Sans', sans-serif !important;
   font-size: 13px !important;
   font-weight: 500 !important;
-  padding: 11px 24px !important;
+  padding: 10px 22px !important;
   border-radius: 999px !important;
   text-decoration: none !important;
   display: inline-block !important;
@@ -124,12 +121,10 @@ footer {
 
 .cta-row .btn-primary {
   background: #f0ede4 !important;
-  color: #242422 !important;
+  color: #1a1a18 !important;
   border: none !important;
 
-  &:hover {
-    background: #e0ddd4 !important;
-  }
+  &:hover { background: #e0ddd4 !important; }
 }
 
 .cta-row .btn-ghost {
@@ -137,9 +132,7 @@ footer {
   color: #f0ede4 !important;
   border: 1px solid #555 !important;
 
-  &:hover {
-    border-color: #888 !important;
-  }
+  &:hover { border-color: #888 !important; }
 }
 
 // ── Hero Image ───────────────────────────────────────────────
@@ -147,8 +140,8 @@ footer {
 .hero-img {
   position: relative;
   overflow: hidden;
-  background: #2e2e2b;
-  min-height: 500px;
+  background: #2a2a27;
+  min-height: 480px;
 
   img {
     width: 100%;
@@ -179,42 +172,38 @@ footer {
 .stats-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  border-bottom: 1px solid #333;
-  background: #2a2a28;
+  border-bottom: 1px solid #2e2e2b;
+  background: #222220;
 }
 
 .stat {
-  padding: 1.75rem 4rem;
-  border-right: 1px solid #333;
+  padding: 1.5rem 2.5rem;
+  border-right: 1px solid #2e2e2b;
 
-  &:last-child {
-    border-right: none;
-  }
+  &:last-child { border-right: none; }
 }
 
 .stat-num {
   font-family: 'DM Serif Display', Georgia, serif;
-  font-size: 34px;
+  font-size: 32px;
   color: #f0ede4;
   line-height: 1;
-  margin: 0 0 5px;
+  margin: 0 0 4px;
 }
 
 .stat-label {
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  color: #666;
+  color: #555;
   margin: 0;
 }
 
 // ── Info Sections ─────────────────────────────────────────────
 
 .info-section {
-  padding: 2.5rem 4rem;
-  background: #242422;
-  border-bottom: 1px solid #333;
-  width: 100%;
+  padding: 2.5rem 2.5rem;
+  background: #1a1a18;
+  border-bottom: 1px solid #2e2e2b;
 }
 
 .section-label {
@@ -223,7 +212,7 @@ footer {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #666;
+  color: #555;
   margin: 0 0 1.25rem;
   display: flex;
   align-items: center;
@@ -233,7 +222,7 @@ footer {
     content: '';
     flex: 1;
     height: 1px;
-    background: #333;
+    background: #2e2e2b;
   }
 }
 
@@ -248,11 +237,11 @@ footer {
 .skill-tag {
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  padding: 6px 16px;
+  padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid #3a3a38;
+  border: 1px solid #333;
   color: #888;
-  background: #2a2a28;
+  background: #222220;
 }
 
 // ── Contact ───────────────────────────────────────────────────
@@ -268,10 +257,10 @@ footer {
   font-size: 13px;
   color: #888;
   text-decoration: none;
-  padding: 8px 18px;
-  border: 1px solid #3a3a38;
+  padding: 8px 16px;
+  border: 1px solid #333;
   border-radius: 8px;
-  background: #2a2a28;
+  background: #222220;
   transition: border-color 0.2s, color 0.2s;
 
   &:hover {
