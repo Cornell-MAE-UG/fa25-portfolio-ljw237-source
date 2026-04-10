@@ -1,0 +1,15 @@
+---
+layout: project
+title: Open Design Project
+description: A semester-long engineering design project developing a spotted lanternfly trap for New York vineyards.
+image: /assets/images/SLFonvine.png
+---
+
+## Open Design Project — Save the Grapes
+
+A semester-long design project completed in MAE 2250, partnering with Cornell CALS Extension, E&J Gallo Winery, and the National Grape Association to develop a solution for spotted lanternfly infestations in vineyards.
+
+### Milestones
+
+- [Milestone 1: Client Pitch]({{ "/projects/odp/milestone1/" | relative_url }})
+- [Milestone 2: First Prototype]({{ "/projects/odp/milestone2/" | relative_url }})
