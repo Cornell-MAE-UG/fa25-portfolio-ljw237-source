@@ -15,7 +15,7 @@ title: Luca Welle
   </div>
   <div class="hero-img">
     <img src="{{ "assets/images/IMG_2796.jpg" | relative_url }}" alt="Engineering workspace" />
-    <span class="hero-label">Cornell · Class of 2027</span>
+    <span class="hero-label">Cornell · Class of 2028</span>
   </div>
 </section>
 
@@ -29,7 +29,7 @@ title: Luca Welle
     <p class="stat-label">Mechanical & aerospace eng.</p>
   </div>
   <div class="stat">
-    <p class="stat-num">'27</p>
+    <p class="stat-num">'28</p>
     <p class="stat-label">Expected graduation</p>
   </div>
 </div>
