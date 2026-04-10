@@ -52,7 +52,7 @@ title: Luca Welle
   <p class="section-label">Contact</p>
   <div class="contact-row">
     <a href="mailto:lw237@cornell.edu" class="contact-link">✉ lw237@cornell.edu</a>
-    <a href="https://linkedin.com/in/YOUR-LINKEDIN" class="contact-link" target="_blank">in LinkedIn</a>
+    <a href="https://linkedin.com/in/luca-welle" class="contact-link" target="_blank">in LinkedIn</a>
     <a href="https://github.com/Cornell-MAE-UG/fa25-portfolio-ljw237-source" class="contact-link" target="_blank">⌥ GitHub</a>
   </div>
 </section>
