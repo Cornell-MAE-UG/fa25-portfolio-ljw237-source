@@ -1,0 +1,278 @@
+// ============================================================
+// Homepage styles — _sass/_home.scss
+// Import this in your main sass file with: @import "home";
+// ============================================================
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+// Typography base for homepage
+.headline,
+.stat-num {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+body,
+.bio,
+.eyebrow,
+.btn,
+.section-label,
+.skill-tag,
+.contact-link,
+.stat-label {
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+// ── Hero ────────────────────────────────────────────────────
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+  border-bottom: 1px solid #e2e2da;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-text {
+  padding: 4rem 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #faf9f4;
+
+  @media (max-width: 768px) {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 1rem;
+}
+
+.headline {
+  font-size: 52px;
+  line-height: 1.08;
+  color: #1a1a18;
+  margin: 0 0 1.5rem;
+  letter-spacing: -1px;
+
+  em {
+    font-style: italic;
+    color: #888;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+  }
+}
+
+.bio {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #666;
+  max-width: 380px;
+  margin: 0 0 2rem;
+  font-weight: 300;
+}
+
+// ── CTA Buttons ─────────────────────────────────────────────
+
+.cta-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.btn-primary {
+  background: #1a1a18;
+  color: #faf9f4;
+  border: none;
+
+  &:hover {
+    background: #333;
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #1a1a18;
+  border: 1px solid #ccc;
+
+  &:hover {
+    border-color: #888;
+  }
+}
+
+// ── Hero Image ───────────────────────────────────────────────
+
+.hero-img {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  background: #c9d4cc;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: grayscale(10%);
+  }
+
+  @media (max-width: 768px) {
+    min-height: 280px;
+  }
+}
+
+.hero-label {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+// ── Stats Bar ────────────────────────────────────────────────
+
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #e2e2da;
+  background: #faf9f4;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat {
+  padding: 1.5rem 2.5rem;
+  border-right: 1px solid #e2e2da;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  @media (max-width: 600px) {
+    border-right: none;
+    border-bottom: 1px solid #e2e2da;
+  }
+}
+
+.stat-num {
+  font-size: 32px;
+  color: #1a1a18;
+  line-height: 1;
+  margin: 0 0 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #888;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+// ── Info Sections ────────────────────────────────────────────
+
+.info-section {
+  padding: 2.5rem 2.5rem;
+  background: #faf9f4;
+  border-bottom: 1px solid #e2e2da;
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e2e2da;
+  }
+}
+
+// ── Skills Tags ──────────────────────────────────────────────
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  color: #666;
+  background: #f4f3ee;
+  letter-spacing: 0.2px;
+}
+
+// ── Contact ──────────────────────────────────────────────────
+
+.contact-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  transition: border-color 0.2s, color 0.2s;
+
+  &:hover {
+    border-color: #888;
+    color: #1a1a18;
+  }
+}
