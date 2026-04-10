@@ -1,6 +1,6 @@
 ---
 hidden: true
-layout: project
+layout: default
 title: "ODP Milestone 2: First Prototype"
 description: Planning and mock-up of the first prototype for the spotted lanternfly trap.
 image: /assets/images/SLFonvine.png

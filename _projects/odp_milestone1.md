@@ -1,6 +1,6 @@
 ---
 hidden: true
-layout: project
+layout: default
 title: "ODP Milestone 1: Client Pitch"
 description: Initial client outline and pitch for the Save the Grapes spotted lanternfly trap.
 image: /assets/images/SLFonvine.png
