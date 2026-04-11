@@ -293,3 +293,134 @@ a {
 a:hover {
   color: #f0ede4 !important;
 }
+
+// ── ODP Page ─────────────────────────────────────────────────
+
+.odp-hero {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+
+  img.odp-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+    display: block;
+  }
+}
+
+.odp-hero-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.odp-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 0 0 0.5rem;
+}
+
+.odp-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 42px;
+  color: #f0ede4;
+  margin: 0 0 0.25rem;
+  line-height: 1;
+}
+
+.odp-subtitle {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #aaa;
+  margin: 0;
+}
+
+.odp-body {
+  padding: 2.5rem 2rem;
+}
+
+.odp-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #999;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 0 2.5rem;
+}
+
+.odp-milestones-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+  margin: 0 0 1rem;
+}
+
+.odp-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 0 2.5rem;
+}
+
+.odp-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: #222220;
+  border: 0.5px solid #333;
+  border-radius: 10px;
+  text-decoration: none !important;
+  transition: border-color 0.2s, background 0.2s;
+
+  &:hover {
+    border-color: #666;
+    background: #2a2a28;
+  }
+}
+
+.odp-card-num {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 22px;
+  color: #555;
+  min-width: 32px;
+}
+
+.odp-card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #f0ede4 !important;
+  font-weight: 400;
+  flex: 1;
+}
+
+.odp-card-arrow {
+  font-size: 18px;
+  color: #555;
+}
+
+.odp-back {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: #666 !important;
+  text-decoration: none !important;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #f0ede4 !important;
+  }
+}

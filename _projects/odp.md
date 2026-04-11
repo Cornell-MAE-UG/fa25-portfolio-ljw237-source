@@ -1,17 +1,35 @@
 ---
 layout: default
 title: Open Design Project
-description: A semester-long engineering design project developing a spotted lanternfly trap for New York vineyards.
 image: /assets/images/SLFonvine.png
 ---
 
-## Open Design Project — Save the Grapes
+<div class="odp-hero">
+  <img src="{{ "/assets/images/SLF_grapes.jpg" | relative_url }}" alt="Spotted Lanternfly on grapevine" class="odp-hero-img" />
+  <div class="odp-hero-overlay">
+    <p class="odp-eyebrow">MAE 2250 · Cornell University</p>
+    <h1 class="odp-title">Open Design Project</h1>
+    <p class="odp-subtitle">Save the Grapes</p>
+  </div>
+</div>
 
-A semester-long design project completed in MAE 2250, partnering with Cornell CALS Extension, E&J Gallo Winery, and the National Grape Association to develop a solution for spotted lanternfly infestations in vineyards.
+<div class="odp-body">
+  <p class="odp-description">A semester-long engineering design project partnering with Cornell CALS Extension, E&J Gallo Winery, and the National Grape Association to develop a trap for spotted lanternfly infestations in New York vineyards.</p>
 
-### Milestones
+  <p class="odp-milestones-label">Milestones</p>
 
-- [Milestone 1: Client Pitch](/fa25-portfolio-ljw237-source/projects/odp/milestone1/)
-- [Milestone 2: First Prototype](/fa25-portfolio-ljw237-source/projects/odp/milestone2/)
+  <div class="odp-cards">
+    <a href="/fa25-portfolio-ljw237-source/projects/odp/milestone1/" class="odp-card">
+      <span class="odp-card-num">01</span>
+      <span class="odp-card-title">Client Pitch</span>
+      <span class="odp-card-arrow">→</span>
+    </a>
+    <a href="/fa25-portfolio-ljw237-source/projects/odp/milestone2/" class="odp-card">
+      <span class="odp-card-num">02</span>
+      <span class="odp-card-title">First Prototype</span>
+      <span class="odp-card-arrow">→</span>
+    </a>
+  </div>
 
-[← Back to Projects](/fa25-portfolio-ljw237-source/projects/)
+  <a href="/fa25-portfolio-ljw237-source/projects/" class="odp-back">← Back to Projects</a>
+</div>
