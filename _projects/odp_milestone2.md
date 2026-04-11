@@ -9,7 +9,7 @@ permalink: /projects/odp/milestone2/
 
 [← Back to ODP](/fa25-portfolio-ljw237-source/projects/odp/)
 
-### ODP 4: Planning Prototype
+### Planning Prototype
 
 ---
 
