@@ -424,3 +424,27 @@ a:hover {
     color: #f0ede4 !important;
   }
 }
+
+// Fix project page text colors
+.container p,
+.container li,
+.container td,
+.container th {
+  color: #999 !important;
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container strong {
+  color: #f0ede4 !important;
+}
+
+.container a {
+  color: #aaa !important;
+}
+
+.container a:hover {
+  color: #f0ede4 !important;
+}
