@@ -447,3 +447,20 @@ a:hover {
 .container a:hover {
   color: #f0ede4 !important;
 }
+main table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+main th {
+  background: #222220 !important;
+  color: #f0ede4 !important;
+  padding: 10px 12px !important;
+  border: 1px solid #333 !important;
+}
+
+main td {
+  color: #999 !important;
+  padding: 10px 12px !important;
+  border: 1px solid #2e2e2b !important;
+}
