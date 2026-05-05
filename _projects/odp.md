@@ -29,7 +29,15 @@ image: /assets/images/SLFonvine.png
       <span class="odp-card-title">First Prototype</span>
       <span class="odp-card-arrow">→</span>
     </a>
+    <a href="/fa25-portfolio-ljw237-source/projects/odp/milestone3/" class="odp-card">
+      <span class="odp-card-num">03</span>
+      <span class="odp-card-title">Functional Prototype</span>
+      <span class="odp-card-arrow">→</span>
+</a>
   </div>
+
+
 
   <a href="/fa25-portfolio-ljw237-source/projects/" class="odp-back">← Back to Projects</a>
 </div>
+

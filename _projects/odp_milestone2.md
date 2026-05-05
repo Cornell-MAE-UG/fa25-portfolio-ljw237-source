@@ -82,3 +82,5 @@ Mount speaker centrally between poles. Wire battery → PDP → cycle timer → 
 ---
 
 [← Previous: Milestone 1 — Client Pitch](/fa25-portfolio-ljw237-source/projects/odp/milestone1/)
+
+[Next: Milestone 3 — Functional Prototype →](/fa25-portfolio-ljw237-source/projects/odp/milestone3/)
